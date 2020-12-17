@@ -1,3 +1,5 @@
+/* This is the MAIN STYLE for the route called "/" */
+
 body {
 	font-family: Ubuntu;
 	/* background-color: #AE65CE; Working on that! */
@@ -16,19 +18,12 @@ body {
 	background-color: #3CA8FF;
 	margin: 10px;
 	padding: 10px;
-	transition: 1s;
-}
-
-.HomeBtnLI:hover {
-	background-color: #555555;
-	transition: 1s;
-	padding: 15px;
-	font-size: 25px;
 }
 
 .HomeA {
 	text-decoration: none;
 	color: #FCFCFC;
+	pointer-events: none;
 }
 
 .AboutBtnLI {
