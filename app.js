@@ -12,6 +12,10 @@ app.get("/about", (req, res) => { // Routing the "About" Route
 	res.sendFile(path.join(__dirname + "/public/about.html")); // Rendering the "About" HTML File
 });
 
+app.get("/links", (req, res) => { // Routing the "Links" Route
+	res.sendFile(path.join(__dirname + "/public/links.html")); // Rendering the "Links" HTML File
+}
+
 const PORT = 80; // Saving the Port to a variable
 
 app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`)); // Running the server on the saved PORT variable

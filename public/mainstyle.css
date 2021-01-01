@@ -46,3 +46,24 @@ body {
 	text-decoration: none;
 	color: #FCFCFC;
 }
+
+.LinksBtnLI {
+	display: inline;
+	float: left;
+	background-color: #3CA8FF;
+	margin: 10px;
+	padding: 10px;
+	transition: 1s;
+}
+
+.LinksBtnLI:hover {
+	background-color: #555555;
+	transition: 1s;
+	padding: 15px;
+	font-size: 25px;
+}
+
+.LinksA {
+	text-decoration: none;
+	color: #FCFCFC;
+}
