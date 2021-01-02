@@ -1,3 +1,5 @@
+/* This is the MAIN STYLE for the route called "/" */
+
 body {
 	font-family: Ubuntu;
 	/* background-color: #AE65CE; Working on that! */
@@ -37,30 +39,19 @@ body {
 	background-color: #3CA8FF;
 	margin: 10px;
 	padding: 10px;
+	transition: 1s;
+}
+
+.AboutBtnLI:hover {
+	background-color: #555555;
+	transition: 1s;
+	padding: 15px;
+	font-size: 25px;
 }
 
 .AboutA {
 	text-decoration: none;
-	pointer-events: none;
 	color: #FCFCFC;
-}
-
-.abtHeading {
-	position: absolute;
-	left: 45%;
-	top: 20%;
-}
-
-.Parag {
-	position: absolute;
-	left: 38%;
-	top: 28%;
-}
-
-.abtHeadingQst {
-	position: absolute;
-	left: 43%;
-	top: 25%;
 }
 
 .LinksBtnLI {
@@ -69,18 +60,10 @@ body {
 	background-color: #3CA8FF;
 	margin: 10px;
 	padding: 10px;
-	transition: 1s;
-}
-
-.LinksBtnLI:hover {
-	background-color: #555555;
-	transition: 1s;
-	padding: 15px;
-	font-size: 25px;
-	transition: 1s;
 }
 
 .LinksA {
 	text-decoration: none;
 	color: #FCFCFC;
+	pointer-events: none;
 }
