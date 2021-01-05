@@ -67,3 +67,27 @@ body {
 	color: #FCFCFC;
 	pointer-events: none;
 }
+
+.L1 {
+	text-decoration: none;
+	color: #9495FF;
+	font-size: 20px;
+}
+
+.L2 {
+	text-decoration: none;
+	color: #9495FF;
+	font-size: 20px;
+}
+
+.L3 {
+	text-decoration: none;
+	color: #9495FF;
+	font-size: 20px;
+}
+
+.mainTable {
+	position: absolute;
+	left: 45%;
+	top: 45%
+}
