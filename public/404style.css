@@ -1,0 +1,80 @@
+body {
+	font-family: Ubuntu;
+	/* background-color: #AE65CE; Working on that! */
+}
+
+.NavBarUL {
+	margin: 0;
+	list-style-type: none;
+	padding: 0;
+	display: block;
+}
+
+.HomeBtnLI {
+	display: inline;
+	float: left;
+	background-color: #3CA8FF;
+	margin: 10px;
+	padding: 10px;
+	transition: 1s;
+}
+
+.HomeBtnLI:hover {
+	background-color: #555555;
+	transition: 1s;
+	padding: 15px;
+	font-size: 25px;
+}
+
+.HomeA {
+	text-decoration: none;
+	color: #FCFCFC;
+}
+
+.AboutBtnLI {
+	display: inline;
+	float: left;
+	background-color: #3CA8FF;
+	margin: 10px;
+	padding: 10px;
+	transition: 1s;
+}
+
+.AboutBtnLI:hover {
+	background-color: #555555;
+	transition: 1s;
+	padding: 15px;
+	font-size: 25px;
+}
+
+.AboutA {
+	text-decoration: none;
+	color: #FCFCFC;
+}
+
+.LinksBtnLI {
+	display: inline;
+	float: left;
+	background-color: #3CA8FF;
+	margin: 10px;
+	padding: 10px;
+	transition: 1s;
+}
+
+.LinksBtnLI:hover {
+	background-color: #555555;
+	transition: 1s;
+	padding: 15px;
+	font-size: 25px;
+	transition: 1s;
+}
+
+.LinksA {
+	text-decoration: none;
+	color: #FCFCFC;
+}
+
+.OopsHeading {
+	position: absolute;
+	left: 44%;
+}
