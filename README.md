@@ -16,7 +16,7 @@ install path`
 * **Recommended**: Use the package called
 [nodemon](https://npmjs.com/package/nodemon) or use the command `npm install -g nodemon`
 
-* **To Run**: If you installed the package `nodemon`: `nodemon app.js` or if you
+* **To Run**: If you installed the package `nodemon`: `nodemon ./app.js` or if you
 did not: `node ./app.js`
 
 ## Contributors
