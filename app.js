@@ -1,27 +1,25 @@
-const express = require("express"); // Express is a Node.JS Server Hoster/Runner
-const path = require("path"); // Used to determine what is the current directory
-const app = express(); // Initializing App
+const express = require("express");
+const path = require("path");
+const app = express();
 
-app.use(express.static(__dirname + "/public")) // Making sure all of the Assets/Files are in a certain directory
+app.use(express.static(__dirname + "/public"))
 
-app.get("/", (req, res) => { // Routing the Main Route
-	res.sendFile(path.join(__dirname + "/public/main.html")); // Rendering the Main HTML File
+app.get("/", (req, res) => {
+	res.sendFile(path.join(__dirname + "/public/main.html"));
 });
 
-app.get("/about", (req, res) => { // Routing the "About" Route
-	res.sendFile(path.join(__dirname + "/public/about.html")); // Rendering the "About" HTML File
+app.get("/about", (req, res) => {
+	res.sendFile(path.join(__dirname + "/public/about.html"));
 });
 
-app.get("/links", (req, res) => { // Routing the "Links" Route
-	res.sendFile(path.join(__dirname + "/public/links.html")); // Rendering the "Links" HTML File
+app.get("/links", (req, res) => {
+	res.sendFile(path.join(__dirname + "/public/links.html"));
 });
 
 app.use( (req, res) => {
   res.status(404).sendFile(path.join(__dirname + "/public/404.html"));
 });
 
-const PORT = 80; // Saving the Port to a variable
+const PORT = 80;
 
-app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`)); // Running the server on the saved PORT variable
-
-// Ta-Dah!
+app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
