@@ -8,8 +8,7 @@
 
 * Change directory to the cloned repository with the command `cd Site/`
 
-* Install the required packages with the command `npm install express && npm
-install path`
+* Install the required packages with the command `npm install`
 
 ### Running
 
