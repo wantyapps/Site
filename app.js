@@ -16,6 +16,14 @@ app.get("/links", (req, res) => {
 	res.sendFile(path.join(__dirname + "/public/links.html"));
 });
 
+app.get("/api", (req, res) => {
+	if ( req.headers.username == "TEST" && req.headers.password == "PASSWORD" ) {
+		res.send("{\"success\": true}");
+	} else {
+		res.send("{\"success\": false}");
+	}
+});
+
 app.use( (req, res) => {
   res.status(404).sendFile(path.join(__dirname + "/public/404.html"));
 });
