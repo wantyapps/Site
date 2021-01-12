@@ -16,13 +16,13 @@
 [nodemon](https://npmjs.com/package/nodemon) or use the command `npm install -g nodemon`
 
 * **To Run**: If you installed the package `nodemon`: `nodemon ./app.js` or if you
-did not: `node ./app.js`
+did not: `node ./app.js` or use the command `npm start`
 
 ### Running **With Docker**
 
 * Build the Dockerfile with the command `docker build -t wantyappsSite .`
 
-* Run with the command `npm start`
+* Run with the command `docker run -it app`
 
 ***Stopping***: `^C`/`Control-C`
 
