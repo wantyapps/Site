@@ -22,6 +22,7 @@ app.get("/api", (req, res) => {
 	} else {
 		res.send("{\"success\": false}");
 	}
+	console.log(req.headers);
 });
 
 app.use( (req, res) => {
