@@ -18,6 +18,14 @@
 * **To Run**: If you installed the package `nodemon`: `nodemon ./app.js` or if you
 did not: `node ./app.js`
 
+### Running **With Docker**
+
+* Build the Dockerfile with the command `docker build -t wantyappsSite .`
+
+* Run with the command `npm start`
+
+***Stopping***: `^C`/`Control-C`
+
 ## Contributors
 
 [Uri Arev](https://github.com/wantyapps)
