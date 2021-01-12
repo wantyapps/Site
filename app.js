@@ -31,4 +31,4 @@ app.use( (req, res) => {
 
 const PORT = 80;
 
-app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
+var server = app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
