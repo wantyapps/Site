@@ -22,7 +22,7 @@ did not: `node ./app.js` or use the command `npm start`
 
 * Build the Dockerfile with the command `docker build -t wantyappsSite .`
 
-* Run with the command `docker run -it app`
+* Run with the command `docker run -itp 80:80 wantyappsSite`
 
 ***Stopping***: `^C`/`Control-C`
 
