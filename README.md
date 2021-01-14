@@ -28,4 +28,6 @@ did not: `node ./app.js` or use the command `npm start`
 
 ## Contributors
 
-[Uri Arev](https://github.com/wantyapps)
+[Uri Arev/Wantyapps](https://github.com/wantyapps)
+
+[Ahmetcan Güvendiren/Glacion](https://github.com/glacion)
