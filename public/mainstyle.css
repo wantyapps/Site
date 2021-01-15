@@ -64,3 +64,17 @@ body {
 	text-decoration: none;
 	color: #FCFCFC;
 }
+
+.RepoT {
+	position: absolute;
+	top: 15%;
+	left: 46%;
+}
+
+.SiteRepo {
+	position: absolute;
+	text-decoration: none;
+	color: #9495FF;
+	top: 80%;
+	left: 37%;
+}
