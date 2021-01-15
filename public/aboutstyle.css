@@ -46,19 +46,25 @@ body {
 
 .abtHeading {
 	position: absolute;
-	left: 45%;
+	left: 44%;
 	top: 20%;
 }
 
-.Parag {
+.Parag1 {
 	position: absolute;
-	left: 38%;
+	left:42%;
 	top: 28%;
+}
+
+.Parag2 {
+	position: absolute;
+	left: 37.5%;
+	top: 30%;
 }
 
 .abtHeadingQst {
 	position: absolute;
-	left: 43%;
+	left: 42.5%;
 	top: 25%;
 }
 
