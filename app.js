@@ -29,6 +29,4 @@ app.use( (req, res) => {
   res.status(404).sendFile(path.join(__dirname + '/public/404.html'));
 });
 
-const PORT = 80;
-
-var server = app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
+var server = app.listen(80, () => console.log(`Server is listening on port 80`));
