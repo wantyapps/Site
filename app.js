@@ -1,32 +1,32 @@
-const express = require("express");
-const path = require("path");
+const express = require('express');
+const path = require('path');
 const app = express();
 
-app.use(express.static(__dirname + "/public"))
+app.use(express.static(__dirname + '/public'))
 
-app.get("/", (req, res) => {
-	res.sendFile(path.join(__dirname + "/public/main.html"));
+app.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname + '/public/main.html'));
 });
 
-app.get("/about", (req, res) => {
-	res.sendFile(path.join(__dirname + "/public/about.html"));
+app.get('/about', (req, res) => {
+	res.sendFile(path.join(__dirname + '/public/about.html'));
 });
 
-app.get("/links", (req, res) => {
-	res.sendFile(path.join(__dirname + "/public/links.html"));
+app.get('/links', (req, res) => {
+	res.sendFile(path.join(__dirname + '/public/links.html'));
 });
 
-app.get("/api", (req, res) => {
-	if ( req.headers.username == "TEST" && req.headers.password == "PASSWORD" ) {
-		res.send("{\"success\": true}");
+app.get('/api', (req, res) => {
+	if ( req.headers.username == 'TEST' && req.headers.password == 'PASSWORD' ) {
+		res.send('{\"success\": true}');
 	} else {
-		res.send("{\"success\": false}");
+		res.send('{\"success\": false}');
 	}
 	console.log(req.headers);
 });
 
 app.use( (req, res) => {
-  res.status(404).sendFile(path.join(__dirname + "/public/404.html"));
+  res.status(404).sendFile(path.join(__dirname + '/public/404.html'));
 });
 
 const PORT = 80;
