@@ -72,9 +72,12 @@ body {
 }
 
 .L2 {
+	position: absolute;
 	text-decoration: none;
 	color: #9495FF;
 	font-size: 20px;
+	left: 38%;
+	top: 20%;
 }
 
 .L3 {
