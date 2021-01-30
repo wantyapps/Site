@@ -25,7 +25,7 @@ app.get('/api', (req, res) => {
 	console.log(req.headers);
 });
 
-app.use( (req, res) => {
+app.use((req, res) => {
   res.status(404).sendFile(path.join(__dirname + '/public/404.html'));
 });
 
