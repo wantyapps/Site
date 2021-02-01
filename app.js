@@ -22,11 +22,14 @@ app.get('/api', (req, res) => {
 	} else {
 		res.send('{\"success\": false}');
 	}
-	console.log(req.headers);
+	if ( req.headers ) {
+		console.log('We got some API requests!');
+		console.log(req.headers);
+	};
 });
 
 app.use((req, res) => {
   res.status(404).sendFile(path.join(__dirname + '/public/404.html'));
 });
 
-var server = app.listen(80, () => console.log(`Server is listening on port 80`));
+var server = app.listen(80, () => console.log('Server is listening on port 80'));
