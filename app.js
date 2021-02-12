@@ -23,7 +23,6 @@ app.get('/api', (req, res) => {
 		res.send('{\"success\": false}');
 	}
 	if ( req.headers ) {
-		console.log('We got some API requests!');
 		console.log(req.headers);
 	};
 });
