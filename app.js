@@ -2,6 +2,10 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
+function getAPICalls(request) {
+	return request.headers;
+};
+
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', (req, res) => {
@@ -23,7 +27,7 @@ app.get('/api', (req, res) => {
 		res.send('{\"success\": false}');
 	}
 	if ( req.headers ) {
-		console.log(req.headers);
+		console.log(getAPICalls(req));
 	};
 });
 
