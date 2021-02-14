@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-function getAPICalls(request) {
+function getAPIRequests(request) {
 	return request.headers;
 };
 
@@ -27,7 +27,7 @@ app.get('/api', (req, res) => {
 		res.send('{\"success\": false}');
 	}
 	if ( req.headers ) {
-		console.log(getAPICalls(req));
+		console.log(getAPIRequests(req));
 	};
 });
 
