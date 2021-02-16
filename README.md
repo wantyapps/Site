@@ -26,6 +26,16 @@ did not: `node ./app.js` or use the command `npm start`
 
 ***Stopping***: `^C`/`Control-C`
 
+## ToDo
+
+### API
+
+- Maybe add more features to API when Official API Client is detected
+
+### Frontend
+
+- Make a Light/Dark Color Scheme switch (With Animation?) 
+
 ## Contributors
 
 [Uri Arev/Wantyapps](https://github.com/wantyapps)
