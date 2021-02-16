@@ -2,8 +2,18 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-function getAPIRequests(request) {
+function get_API_requests(request) {
 	return request.headers;
+};
+
+function process_user_agent(user_agent) {
+	if ( user_agent == "Official Go Wantyapps Site API" ) {
+		return "Official API Client detected";
+	} else if ( user_agent == "Official Python Wantyapps Site API" ) {
+		return "Official API Client detected";
+	} else {
+		return "The API client used to request is not official.";
+	};
 };
 
 app.use(express.static(__dirname + '/public'))
@@ -27,7 +37,8 @@ app.get('/api', (req, res) => {
 		res.send('{\"success\": false}');
 	}
 	if ( req.headers ) {
-		console.log(getAPIRequests(req));
+		console.log(get_API_requests(req));
+		console.log(process_user_agent(req.headers['user-agent']));
 	};
 });
 
