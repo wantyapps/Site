@@ -20,9 +20,9 @@ did not: `node ./app.js` or use the command `npm start`
 
 ### Running **With Docker**
 
-* Build the Dockerfile with the command `docker build -t wantyappsSite .`
+* Build the Dockerfile with the command `docker build -t wantyapps .`
 
-* Run with the command `docker run -itp 80:80 wantyappsSite`
+* Run with the command `docker run -itp 80:80 wantyapps`
 
 ***Stopping***: `^C`/`Control-C`
 
