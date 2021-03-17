@@ -34,7 +34,7 @@ did not: `node ./app.js` or use the command `npm start`
 
 ### Frontend
 
-- Make a Light/Dark Color Scheme switch (With Animation?) 
+- Make a Light/Dark Color Scheme switch (With Animation?)
 
 ## Contributors
 
